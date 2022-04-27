@@ -2,14 +2,18 @@
 '
 ' Shows Three Ways Of Outputing To Console "Hello, World!".  Also, A Few Comments on 'Compiler Directives'
 '
-' Any Statements prefixed With The '#' symbol is a 'Compiler Directive' i.e, It doesn'r gernerate any code
-' but just tells the compiler how to hndle something, including actual code generation.   In The first
+' Any Statements prefixed With The '#' symbol is a 'Compiler Directive' i.e, It doesen't gernerate any code
+' but just tells the compiler how to handle something, including actual code generation.   In The first
 ' compiler readable statement left The "#Compile" directive is for tellingg the compiler that is is to be a
-' Exe' project - not an 'Obj' or 'Dll' projecr.
+' Exe' project - not an 'Obj' or 'Dll' project.
 
 ' The 2nd Compiler Directive - '#Dim All', takes a little more explanation.  It tells the compiler to 'throw'
 ' an error on any 'undimensioned' variables it may encounter.  The program below has no variales except for
-' entities known as 'string literals', which I'll cover later.
+' entities known as 'string literals', which I'll cover later.  Note that the basic programming languages use
+' either the ' symbol to denote a comment, or the more verbose string REM (means remark). This is known as 
+' commenting or remarking code.  The compiler ignores reading or doing any processing of code lines beginning
+' with either the ' symbol, or REM. 
+'
 #Compile Exe                       ' Create Exe File
 #Dim     All                       ' Throw Error When Undeclared Variable Is Encountered.
 
